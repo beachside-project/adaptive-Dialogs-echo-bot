@@ -1,0 +1,5 @@
+﻿# Greeting
+- Hi!
+- Welcome!
+- Hey!
+- 今は ${addHours(utcNow(), 9, "yyyy/MM/dd HH:mm")} だよ

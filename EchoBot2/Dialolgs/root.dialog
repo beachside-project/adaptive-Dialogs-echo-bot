@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "../app.schema",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "generator": "common.lg",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "You said '${turn.activity.text}'"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "${Greeting()}"
+        }
+      ]
+    }
+  ]
+}
